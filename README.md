@@ -4,6 +4,10 @@ Work in this repository happens in branches.
 
 ## Branches
 
+* `master`
+
+  This branch contains nothing but this document.
+
 * `spec`
 
   This branch contains the modules that provide the core of the business
