@@ -19,5 +19,5 @@ approved business logic.
 
 Individual projects live in their own branches.
 
-For a branch to be considered for review and deployment, it mush contain
+For a branch to be considered for review and deployment, it must contain
 a merge commit of the current head of the `spec` branch.
