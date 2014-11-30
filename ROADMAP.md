@@ -20,19 +20,19 @@ managed by way of the entity objects (`Act::Entity::`).
 
 The following definitions will be used:
 
-* `mod\_perl`: the Apache application that is running since 2004,
+* `mod_perl`: the Apache application that is running since 2004,
   built on top of `Act::Object`
-* `legacy URL`: the URL served by `mod\_perl`, and that are linked from
+* `legacy URL`: the URL served by `mod_perl`, and that are linked from
   many places over the Internet
-* `old\_schema`: the database schema used by the `mod\_perl` application
+* `old_schema`: the database schema used by the `mod_perl` application
   (using it also implies using the `act.ini` files to get some of the data)
 * `Act2`: the newer version of Act running on entities
-* `new\_schema`: the improved database schema that might be need to support
+* `new_schema`: the improved database schema that might be need to support
    new features in `Act2`
 
 ### Stage 0
 
-Only `legacy URL` exist, served by `mod\_perl` on top of `old\_schema`.
+Only `legacy URL` exist, served by `mod_perl` on top of `old_schema`.
 
 ### Stage 1
 
@@ -41,13 +41,13 @@ The entity objects are fleshened from the data in `old_schema`, and the
 data is saved there too.
 
 A "beta" site can be setup, running the `Act2` code. Since it's connected
-to the same database schema (`old\_schema`) as the `mod\_perl` application,
+to the same database schema (`old_schema`) as the `mod_perl` application,
 old conferences can be seen in the new context, and managed with the parts of
 `Act2` that are already available.
 
 A subset of the `Act2` application can be made to support some of the
 `legacy URL`, to be able to continue serving the old URL in the future.
-This must be done using entity objects, because the `old\_schema` will
+This must be done using entity objects, because the `old_schema` will
 go away in the future. However, there is only a need to support the
 "read-only" URL, because the "write" operations will be performed by `Act2`.
 
@@ -59,15 +59,15 @@ or repositories.
 `Act2` is ready to go out of beta, i.e. it is complete enough to support
 a complete conference over its lifetime.
 `Act2` also supports serving `legacy URL` using entities.
-`Act2` is still using `old\_schema` and `act.ini` files.
+`Act2` is still using `old_schema` and `act.ini` files.
 
-`mod\_perl` becomes completely obsolete, and can be shut down.
+`mod_perl` becomes completely obsolete, and can be shut down.
 The `legacy URL` supported by `Act2` are locked down to the list of all
 conferences at this point in time (i.e. past conferences only).
 
 ### Stage 3
 
 `Act2` is the only application managing conferences. The lockdown of
-`old\_schema` is dropped, and work can start on `new\_schema` to better
+`old_schema` is dropped, and work can start on `new_schema` to better
 support the entities and the new features.
 
