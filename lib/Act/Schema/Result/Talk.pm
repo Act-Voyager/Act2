@@ -97,7 +97,7 @@ column "url_talk" => {
 
 =head2 duration
 
-Duration in . . . .
+Duration in minutes.
 
 =cut
 
