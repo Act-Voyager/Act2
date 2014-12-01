@@ -95,6 +95,76 @@ column "url_talk" => {
     is_nullable        => 1,
 };
 
+=head2 teaser
+
+A teaser description of the talk.
+
+When C<hide_details> is true, the view will show C<teaser> instead of C<abstract>.
+
+=cut
+
+column "teaser" => {
+    data_type          => 'text',
+    is_nullable        => 1,
+};
+
+=head2 hide_details
+
+Flag to indicate if the details of the talk should be hidden.
+
+=cut
+
+column "hide_details" => {
+    data_type          => 'boolean',
+    default_value      => \"false",
+    is_nullable        => 0,
+};
+
+=head2 allow_record
+
+Flag to indicate if the speaker allows the talk to be recorded.
+
+=cut
+
+column "allow_record" => {
+    data_type          => 'boolean',
+    default_value      => \"true",
+    is_nullable        => 0,
+};
+
+=head2 url_video1
+
+External link to a video of the talk.
+
+=cut
+
+column "url_video1" => {
+    data_type          => 'text',
+    is_nullable        => 1,
+};
+
+=head2 url_video2
+
+External link to a video of the talk.
+
+=cut
+
+column "url_video2" => {
+    data_type          => 'text',
+    is_nullable        => 1,
+};
+
+=head2 url_video3
+
+External link to a video of the talk.
+
+=cut
+
+column "url_video3" => {
+    data_type          => 'text',
+    is_nullable        => 1,
+};
+
 =head2 duration
 
 Duration in minutes.
