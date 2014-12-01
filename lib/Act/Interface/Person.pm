@@ -22,11 +22,6 @@ Act::Interface::Person - The Act Person interface
 
      use Moo;
 
-     with qw(
-         Act::Role::Entity
-         Act::Interface::Person
-     );
-
      # required by Act::Role::Entity
      sub entity_type { 'Person' }
 
@@ -36,6 +31,13 @@ Act::Interface::Person - The Act Person interface
      sub short_name { ... }
 
      sub formal_name { ... }
+
+     # consume the roles at the end,
+     # in case some required methods are provided by attributes
+     with qw(
+         Act::Role::Entity
+         Act::Interface::Person
+     );
 
 =head1 DESCRIPTION
 
