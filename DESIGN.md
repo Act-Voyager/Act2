@@ -16,7 +16,7 @@ The following are the only constraints imposed when writing code for Act2:
 * any business logic MUST be performed by and through entities
 * you are not allowed to change the database schema
   (this rule will actually be enforced until the old Act instance running
-  on mod\_perl has been shut down)
+  on `mod_perl` has been shut down)
 
 
 
