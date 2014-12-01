@@ -3,6 +3,7 @@ package Act;
 use Path::Class;
 use File::HomeDir;
 use YAML::Tiny qw( LoadFile );
+use Module::Runtime qw( require_module );
 use namespace::clean;
 
 use Moo;
@@ -34,10 +35,12 @@ sub BUILD {
 
 # entities
 sub find_entities {
-    my ( $self, $entity_name, @args ) = @_;
+    my ( $self, $entity_type, $query ) = @_;
+    my $entity_class = "Act::Entity::$entity_type";
+    require_module($entity_class);
     return [
-        map "Act::Entity::$entity_name"->new($_),
-        shift->search_raw( $entity_name, @args )
+        map $entity_class->new( %$_, act => $self ),
+        shift->search_raw( $entity_type, $query )
     ];
 }
 
