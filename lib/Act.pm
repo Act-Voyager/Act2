@@ -45,9 +45,9 @@ sub find_entities {
 }
 
 sub get_entity {
-    my ( $self, $entity_name, @args ) = @_;
-    my ( $entity, @more ) = @{ $self->find_entities( $entity_name, @args ) };
-    die "Got more than one $entity_name entity with @_" if @more;
+    my ( $self, $entity_type, $query ) = @_;
+    my ( $entity, @more ) = @{ $self->find_entities( $entity_type, $query ) };
+    die "Got more than one $entity_type entity with @_" if @more;
     return $entity;
 }
 
