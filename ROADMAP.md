@@ -65,6 +65,15 @@ a complete conference over its lifetime.
 The `legacy URL` supported by `Act2` are locked down to the list of all
 conferences at this point in time (i.e. past conferences only).
 
+At this stage, anyone running Act using the `mod_perl` application on
+top of the `old_schema` should be able to upgrade to `Act2`, while
+keeping all the `legacy URL` working.
+
+`Act2` MUST be a drop-in replacement for Act at this point. When upgrading
+from legacy Act, one should start from a specific commit that will have
+a well-known (to be defined) tag from which a smooth migration path to
+the latest development version will be provided.
+
 ### Stage 3
 
 `Act2` is the only application managing conferences. The lockdown of
