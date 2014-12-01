@@ -18,3 +18,16 @@ The following are the only constraints imposed when writing code for Act2:
   (this rule will actually be enforced until the old Act instance running
   on mod\_perl has been shut down)
 
+
+
+## Naming conventions and namespaces
+
+### Act::Interface::
+
+All the modules in the `Act::Interface::` namespace are *interfaces*,
+i.e. they `requires` a set of methods to exist (using L<Moo::Role>).
+
+### Act::Role::
+
+All the modules in the `Act::Role::` namespace provide attributes
+or actual method implementations (possibly by consuming other roles).
