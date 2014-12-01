@@ -20,7 +20,7 @@ sub _build_config { LoadFile( shift->bootstrap_config_file ); }
 sub BUILD {
     my ($self) = @_;
 
-    my @with;
+    my @with = qw( Act::Interface::Storage );
 
     # storage layer
     my ($scheme) = split /:/, $self->config->{endpoint}{uri};
