@@ -24,7 +24,7 @@ The following are the only constraints imposed when writing code for Act2:
 ### Act::Interface::
 
 All the modules in the `Act::Interface::` namespace are *interfaces*,
-i.e. they `requires` a set of methods to exist (using L<Moo::Role>).
+i.e. they `requires` a set of methods to exist (using `Moo::Role`).
 
 ### Act::Role::
 
