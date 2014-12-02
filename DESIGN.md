@@ -26,6 +26,8 @@ The following are the only constraints imposed when writing code for Act2:
 All the modules in the `Act::Interface::` namespace are *interfaces*,
 i.e. they `requires` a set of methods to exist (using `Moo::Role`).
 
+All `Act::Interface::` modules live in the `spec` branch.
+
 ### Act::Role::
 
 All the modules in the `Act::Role::` namespace provide attributes
@@ -36,3 +38,6 @@ or actual method implementations (possibly by consuming other roles).
 All the modules in the `Act::Entity::` namespace are classes describing
 the entities. They implement the business logic of conference management,
 and should only operate at the entity level, oblivious of the data layer.
+
+Each *entity* object must have a corresponding *interface* definition
+and implement it.
