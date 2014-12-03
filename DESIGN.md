@@ -71,6 +71,7 @@ the *domain layer* will provide the legacy UI with "legacy objects"
 that partially support the interfaces of the classes that exist in the
 legacy application.
 
+In this sense, Act2 is a [*strangler application*](http://martinfowler.com/bliki/StranglerApplication.html).
 
 ## Hard constraints
 
