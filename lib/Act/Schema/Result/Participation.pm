@@ -113,4 +113,6 @@ belongs_to "user" => "Act::Schema::Result::User",
 
 (c) 2014 - Th.J. van Hoesel - THEMA-MEDIA NL
 
+=cut
+
 1;
