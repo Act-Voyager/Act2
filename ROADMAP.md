@@ -80,3 +80,9 @@ the latest development version will be provided.
 `old_schema` is dropped, and work can start on `new_schema` to better
 support the entities and the new features.
 
+
+## Beta versions
+
+To encourage contributions, working *beta* versions will be installed
+on top of the production schema. This implies such a *beta* version
+MUST be using the `Act::Schema` in the `spec` branch.
