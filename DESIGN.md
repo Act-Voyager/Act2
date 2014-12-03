@@ -77,13 +77,15 @@ legacy application.
 The following are the only constraints imposed when writing code for Act2:
 
 * any business logic MUST be performed by and through entities
-* you are not allowed to change the database schema
-  (this rule will actually be enforced until the old Act instance running
-  on `mod_perl` has been shut down)
-
+  in the *domain layer*
+* no changes are allowed to the legacy database schema
+  (this rule will actually be enforced until the legacy Act application
+  running on `mod_perl` has been shut down)
 
 
 ## Naming conventions and namespaces
+
+All the elements described below are part of the *domain layer*.
 
 ### Act::Interface::
 
