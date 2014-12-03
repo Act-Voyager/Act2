@@ -38,6 +38,8 @@ column "user_id" => {
     data_type          => 'integer',
 };
 
+unique_constraint ["conf_id", "user_id"];
+
 =head2 tshirt_size
 
 Size of the t-shirt, which seems to vary over time
