@@ -17,7 +17,7 @@ aspect of the whole system.
 > the elements in the same layer or on elements of the layer "beneath" it.
 > Communication upward must pass through some indirect mechanism.
 > 
-> Eric Evans, *Domain-Driven Design*
+> Eric Evans, *Domain-Driven Design: Tackling Complexity in the Heart of Software*
 
 In the Act redesign, we have the following layers (descriptions partially
 quoted from *Domain-Driven Design*), listed from top to bottom:
