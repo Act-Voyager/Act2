@@ -44,6 +44,7 @@ column "talk_id" => {
     data_type          => 'integer',
 };
 
+unique_constraint ["conf_id", "user_id", "talk_id"];
 
 =head1 RELATIONS
 
